@@ -7,6 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RateController;
 
 
 /*
@@ -39,3 +40,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::apiResource('users', UserController::class);
 Route::apiResource('roles', RoleController::class);
 Route::apiResource('permissions', PermissionController::class);
+
+Route::apiResource('rate', RateController::class);
