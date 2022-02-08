@@ -1,10 +1,21 @@
 # API en Laravel basada en el plugin desarrollado por <a href="https://www.biller.uy" target="_blank">Biller</a> 
-Permite obtener la tasa de conversión de Pesos Uruguayos a Dólares del Banco Central del Uruguay.<br /><br /><br />
-Al final de este readme obtienes información sobre Laravel.
+Permite obtener la tasa de conversión de Pesos Uruguayos a Dólares del Banco Central del Uruguay.<br />
 
+## Instalación
+Luego de clonar este repositorio, debes ingresar en el directorio del proyecto y ejecutar:
+```
+$ composer install
+```
+```
+$ php artisan key:generate
+```
+
+El endpoint a utilizar es api/rate
+
+<br />
+Mayor información acerca del plugin:
 <p align="center">
-    <a href="https://www.biller.uy" target="_blank">
-        <img src="https://www.biller.uy/images/logo/logo_biller.svg" width="400" alt="Biller - facturación electrónica" />
+    <a href="https://www.biller.uy" target="_blank"><img src="https://www.biller.uy/images/logo/logo_biller.svg" width="400" alt="Biller - facturación electrónica" />
     </a>
 </p>
 
