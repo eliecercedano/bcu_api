@@ -20,7 +20,8 @@ class RateController extends Controller
     public function index()
     {
         $rate = biller\bcu\Cotizaciones::obtenerCotizacion();
-        return response()->json(['rate' => $rate], 201);
+        $ui     = biller\bcu\Cotizaciones::obtenerCotizacion('',9800);
+        return response()->json(['rate' => $rate, 'ui' => $ui], 201);
     }
 
     /**
