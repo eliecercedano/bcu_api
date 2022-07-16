@@ -21,6 +21,7 @@ class RateController extends Controller
     {
         $rate = biller\bcu\Cotizaciones::obtenerCotizacion();
         $ui   = biller\bcu\Cotizaciones::obtenerCotizacion(null, 9800);
+        
         return response()->json(['rate' => $rate, 'ui' => $ui], 201); 
     }
 
